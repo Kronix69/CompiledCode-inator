@@ -7,7 +7,7 @@ namespace ccinator
 
 	void lexer::split_string()
 	{
-		std::regex reg("[\\n\\r\\s]+");
+		std::regex reg("[\\n\\r\\s.]+");
 
 		tokens = std::vector<std::string>(
 			     std::sregex_token_iterator(content.begin(), content.end(), reg, -1),
